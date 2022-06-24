@@ -111,15 +111,16 @@ section {
     /* width: 100%;
     height: auto; */
     width: 100%; 
-    height: auto; 
-    object-fit: cover; 
-    object-position: -20% 0;
+    /* height: auto;  */
+    object-fit: contain; 
+    /* object-position: -20% 0; */
     padding-bottom: 30px;
+    /* border-radius: 5px; */
 }
 
 /* services section css */
 .servicesText.card {
-    height: 300px;
+    height: 320px;
     font-weight:300;
     /* cursor: pointer; */
   }
@@ -139,11 +140,12 @@ section {
     border: 1px solid #008000;
 } */
 
-/* #portfolio .card-body {
-    height: 400px;
-} */
+#portfolio .card-body {
+    font-weight:300;
+}
 .card{
     height: 100%; 
+    background-color: #dae6f4!important;
   }
 
   /* spacing on all sections */
@@ -158,10 +160,15 @@ section {
 /* social media icons styling */
 .social-icons {
     font-size: 36px;
-    cursor: pointer;
+}
+
+.social-icons a {
+    padding-left: 5px;
+    padding-right: 5px;
 }
 .fa-github:hover,.fa-twitter:hover,.fa-linkedin:hover {
     color: rgb(107, 162, 177);
+    cursor: pointer;
 }
 .fab {
     color: #ffffff;
@@ -177,12 +184,17 @@ section {
     font-size: 1.3rem;
 }
 
+.contactMessage {
+    font-weight: 300;
+}
+
 strong {
     font-weight: 900;
 }
 
 footer {
     color: white;
+    padding-top: 10px;
 }
 
 .copyright {
