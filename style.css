@@ -115,14 +115,8 @@ a {
     position: relative;
 }
 
-/* Herobox styling */
-.hero-title {
-    font-size: 4.5rem;
-    font-family: 'Arvo', serif;
-}
-
 .hero-desc {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
 }
@@ -153,6 +147,7 @@ a {
 }
 
 .card {
+    /* border-radius: 0 !important; */
     height: 100%;
     background-image: linear-gradient(to top left, #caf2f2 0%, #dfe5fa 100%);
 }
@@ -215,4 +210,9 @@ a {
         font-size: 1.1rem
     }
 
+    .hero-desc {
+        font-size: 1.5rem;
+        font-family: 'Poppins', sans-serif;
+        text-transform: uppercase;
+    }
 }
