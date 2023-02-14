@@ -2,60 +2,87 @@ html {
     scroll-padding-top: 5rem;
 }
 
-.poppinsriser{
-font-family: 'Poppins', sans-serif;
-font-weight: Normal; /*  This is just so when ever you call use this class, it uses the normal font weight by default */
-}
-
-.pop-100{ /* you can also name this rbt-light or whatever you like*/
-font-weight:100;
-}
-
-.pop-200{
-font-weight:200;
-}
-
-.pop-300{
-    font-weight:300;
-}
-
-.pop-400{
-    font-weight:400;
-}
-
-.pop-500{
-    font-weight:500;
-}
-
-.pop-700{
-    font-weight:700;
-}
-
-.pop-900{
-font-weight:900;
+body {
+    background-image: linear-gradient(to top left, #1d6060 0%, #2c2655 100%);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
 }
 
 h1 {
     font-family: 'Arvo', serif;
-}
-
-* {
-    font-family: "Poppins", sans-serif;
-    font-size: 1.05rem;
+    color: white;
 }
 
 section {
-    /* font-family: 'Poppins', sans-serif; */
-    padding-bottom: 50px;
+    padding-bottom: 80px;
 }
 
-/* .btn {
-    font-family: 'Poppins', sans-serif;
-} */
+a {
+    text-decoration: none;
+    color: #1d6060;
+    font-weight: 700;
+}
 
-/* display background color black on navbar scroll */
-.navbarScroll.navbarDark {
-    background-color: black;
+.arvo {
+    font-family: 'Arvo', serif;
+}
+
+.background-mask-50 {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.background-mask-30 {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.border-gradient {
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+}
+
+.border-gradient-color {
+    border-image-source: linear-gradient(to top left, #6bf2f2 0%, #90a2eb 100%);
+}
+
+.my-section-header {
+    background-color: rgba(0, 0, 0, 0.53);
+    padding: 10px 20px;
+    border-radius: 10px 10px 0 0;
+}
+
+.btn-success {
+    background-color: rgb(21, 66, 90);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.btn-success:hover {
+    background-color: rgb(58, 146, 160);
+}
+
+.btn-custom {
+    background-color: rgba(21, 66, 90, 0);
+    border: 1px solid white;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.btn-custom:hover {
+    background-color: aliceblue;
+}
+
+.drop-shadow {
+    text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-toggler {
+    margin-bottom: 7px;
+    margin-top: 7px;
 }
 
 .navbar-brand {
@@ -65,39 +92,41 @@ section {
 }
 
 .navbar-brand:hover {
-    color: rgb(214, 166, 115, 0.9);
+    color: #c0caf4;
 }
 
-.navbar-nav li a{
+.navbar-nav li a {
     color: white;
     font-family: 'Poppins', sans-serif;
     font-size: 1.2rem;
-    float: right!important;
+    float: right !important;
 }
 
-.navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
+.navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
     color: rgb(107, 162, 177, 1);
 }
 
 /* hero background image */
 .bgimage {
-    height:100vh;
-    /* background: url('images/neuralnet-rainbow.jpeg'); */
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('images/neuralnet-rainbow.jpeg');
-    background-size:cover;
-    position:relative;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/neuralnet-rainbow.jpeg');
+    background-size: cover;
+    position: relative;
 }
-/* text css above hero image*/
-.hero_title {
+
+/* Herobox styling */
+.hero-title {
     font-size: 4.5rem;
     font-family: 'Arvo', serif;
 }
-.hero_desc {
+
+.hero-desc {
     font-size: 1.5rem;
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
 }
+
 .hero-text {
     text-align: center;
     position: absolute;
@@ -107,94 +136,61 @@ section {
     color: white;
 }
 
-.imageAboutPage {
-    /* width: 100%;
-    height: auto; */
-    width: 100%; 
-    /* height: auto;  */
-    object-fit: contain; 
-    /* object-position: -20% 0; */
-    padding-bottom: 30px;
-    /* border-radius: 5px; */
-}
-
-/* services section css */
-.servicesText.card {
-    height: 320px;
-    font-weight:300;
-    /* cursor: pointer; */
-  }
-
 .servicesIcon {
-    font-size: 36px;
+    font-size: 3rem;
     text-align: center;
     width: 100%;
 }
+
+/* Card styling */
 .card-title {
     text-align: center;
+    font-size: 1.5rem;
 }
-/* .card:hover .servicesIcon {
-    color: #008000;
-} */
-/* .servicesText:hover {
-    border: 1px solid #008000;
-} */
 
-#portfolio .card-body {
-    font-weight:300;
+.card-text {
+    font-weight: 300;
 }
-.card{
-    height: 100%; 
-    background-color: #dae6f4!important;
-  }
 
-  /* spacing on all sections */
-/* #about, #services, #portfolio, #contact {
-    margin-top: 4rem;
-    padding-top: 4rem;
+.card {
+    height: 100%;
+    background-image: linear-gradient(to top left, #caf2f2 0%, #dfe5fa 100%);
 }
-#contact {
-    padding-bottom: 4rem;
-} */
 
-/* social media icons styling */
 .social-icons {
-    font-size: 36px;
+    font-size: 1rem;
 }
 
 .social-icons a {
     padding-left: 5px;
     padding-right: 5px;
 }
-.fa-github:hover,.fa-twitter:hover,.fa-linkedin:hover {
+
+.fa-github:hover,
+.fa-twitter:hover,
+.fa-linkedin:hover {
     color: rgb(107, 162, 177);
     cursor: pointer;
 }
+
 .fab {
     color: #ffffff;
     font-size: 36px;
 }
+
 /* footer styling */
 #footer {
-    background-color: #000000;
+    background-color: #01060C;
     text-align: center;
-}
-
-.first-sentence {
-    font-size: 1.3rem;
+    color: white;
+    padding-top: 10px;
+    width: 100% !important;
+    position: absolute;
+    background-color: black;
 }
 
 .contactMessage {
     font-weight: 300;
-}
-
-strong {
-    font-weight: 900;
-}
-
-footer {
-    color: white;
-    padding-top: 10px;
 }
 
 .copyright {
@@ -207,4 +203,16 @@ footer {
     font-size: 14px;
 }
 
-   
+.highlight {
+    color: rgb(101, 156, 245)
+}
+
+
+/* Media queries  */
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    body {
+        font-size: 1.1rem
+    }
+
+}

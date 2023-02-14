@@ -2,49 +2,52 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
     <title>Sami Friedrich</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- linking css file -->
-    <link rel="stylesheet" href="style.css">
-    <!-- jquery -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <!-- cdnjs -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <!-- bootstrap CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
-
-    
-    <!-- font awesome -->
-    <script src="https://kit.fontawesome.com/c70f6425bb.js" crossorigin="anonymous"></script>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Arvo|Bungee|Roboto" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap"
         rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- My overrides -->
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg fixed-top navbarScroll navbar-dark .custom_nav">
-        <div class="container">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark" style="background-color: #000000b4;">
+        <div class="container-fluid">
+
             <a class="navbar-brand" href="#">Sami Friedrich</a>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#home">Home</a>
+                <ul class="navbar-nav ms-auto" style="font-weight: 400;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#services">Skills</a>
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#publications">Publications</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#portfolio">Portfolio</a>
@@ -57,359 +60,501 @@
             </div>
         </div>
     </nav>
-    <!-- main banner -->
+
+
+
+    <!-- Herobox -->
     <section class="bgimage" id="home">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
-                    <h2 class="hero_title">Sami Friedrich</h2>
-                    <p class="hero_desc"> Data Science | Computational Biology | Science Communication</p>
-                    <!-- <a href="#" class="btn btn-outline-light btn-lg">Download CV</a> -->
+                    <h2 class="hero-title">Sami Friedrich</h2>
+                    <p class="hero-desc fw-light pt-3">Neuroscientist | Developer | Communication Specialist</p>
                 </div>
             </div>
         </div>
     </section>
-    <!-- about section-->
-    <section>
-        <div class="container mt-4 pt-4">
-            <h1 id="about" class="text-center">About Me</h1>
-            <div class="row mt-4">
-                <div class="col-lg-4">
-                    <img src="images/neuron-Sami-Friedrich.jpeg" class="imageAboutPage" alt="">
+
+
+    <div class="container-fluid">
+
+        <!-- About section-->
+        <section>
+            <div class="container mt-4 pt-4 text-white" id="about">
+                <!-- <h1 id="about" class="text-center">Welcome</h1> -->
+                <div class="dark-container shadow rounded-3 border-gradient border-gradient-color">
+                    <div class="row mx-auto d-flex justify-content-center align-items-center rounded shadow">
+                        <div class="col-12 col-md-5 p-4 p-lg-5 d-flex justify-content-center">
+                            <img src="images/sami-friedrich-neuroscientist-450.jpg" class="img-fluid shadow-lg"
+                                alt="Sami Friedrich explaining a model of a neuron">
+                        </div>
+                        <div class="col-12 col-md-7 p-4 p-lg-5">
+                            <div class="drop-shadow">
+                                <p class="display-3 mb-3">Hi, I'm Sami.</p>
+                                <p class="fs-3 fw-light">I thrive at the
+                                    intersection of science and technology. </p>
+                                <p class="fs-5 fw-normal">
+                                    My specialty is discovering and communicating the stories that live within data,
+                                    science, and the natural world.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="col-lg-8">
-                    <p class="poppinsriser pop-300"><span class="first-sentence pop-700">Hi, I'm Sami. I thrive at the intersection of science and technology, </span>
-                        particularly when it comes to building tools and resources that help researchers extract, explore, and visualize complex datasets.
-                        </p>
-                        <p class="poppinsriser pop-300">
-                            I have over 10 years of research experience spanning neuroscience, molecular biology, genomics,
-                            and transcriptomics.
-                            <ul class="poppinsriser pop-300">
-                                <li><span class="pop-500">BS in Neurobiology</span> from the University of Texas at Austin</li>
-                                <li><span class="pop-500">PhD in Behavioral Neuroscience</span> from Oregon Health and Science University</li>
+                <!-- idea - turn into horizontal cards -->
+                <div class="row d-flex justify-content-center mt-4">
+                    <div class="col-12 col-md-5 m-4 p-4 background-mask-30 shadow">
+                        <p class="fs-2 text-center arvo drop-shadow">Education</p>
+                        <div class="fw-light">
+                            <p>
+                                I have over 10 years of research experience spanning neuroscience, molecular
+                                biology,
+                                genomics,
+                                and transcriptomics.
+                            <ul>
+                                <li style="padding-bottom: 10px;"><span class="fw-medium">PhD in Behavioral
+                                        Neuroscience</span> from Oregon Health and
+                                    Science University</li>
+                                <li><span class="fw-medium">BS in Neurobiology</span> from the University of Texas at
+                                    Austin
+                                </li>
                             </ul>
-                    </p>
-
-                    <p class="poppinsriser pop-300">My earliest heroes were Ms. Frizzle and Bill Nye. Their enthusiasm for the scientific method and
-                        teaching are inextricably woven into the work I do. I believe science should be accessible, so I
-                        approach every collaboration, teaching, mentoring, and outreach opportunity as a chance to
-                        practice the art of <span class="pop-500">simplifying complex ideas into engaging insights and
-                            shared understanding.</span>
-                    </p>
-                    <p class="poppinsriser pop-300">
-                        Interested in learning more? Check out some of my guided workshops, recorded seminars, outreach
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5 m-4 p-4 background-mask-30 shadow">
+                        <p class="fs-2 text-center arvo drop-shadow">Mission</p>
+                        <div class="fw-light">
+                            <p class="mb-4">My earliest heroes were Ms. Frizzle and Bill Nye. Their enthusiasm
+                                for the scientific method and
+                                teaching are inextricably woven into the work I do. </p>
+                            <p>I strongly believe science and information should be accessible,
+                                so I
+                                approach my work with the intention of simplifying complex ideas into engaging insights
+                                and shared understanding.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <hr>
+                    <p class="mt-5 mx-auto text-center col-12 col-md-10 col-lg-8">
+                        Interested in learning more? Check out some of my guided workshops, recorded seminars,
+                        outreach
                         materials, and coding projects below.
                     </p>
-                    <p class="poppinsriser pop-300">
-
-                    </p>
-                    <!-- <div class="row mt-3">
-                        <div class="col-md-6">
-                            <ul>
-                                <li>Name: David Parker</li>
-                                <li>Age: 28</li>
-                                <li>Occupation: Web Developer</li>
-
-                            </ul>
+                </div>
+            </div>
+        </section>
+        <!-- services section-->
+        <section id="skills">
+            <div class="container text-center">
+                <div class="my-section-header">
+                    <h1 class="my-auto">Skills</h1>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4 mt-4">
+                        <div class="card servicesText">
+                            <div class="card-body">
+                                <i class="servicesIcon fa-solid fa-chart-line"></i>
+                                <h4 class="card-title mt-3">Data science</h4>
+                                <p class="card-text mt-3">
+                                    Every dataset has a story to tell. I have firsthand experience with every stage of
+                                    the
+                                    data life cycle - from collection, to cleaning, to analysis, to visualization, and
+                                    synthesis.
+                                </p>
+                            </div>
                         </div>
-                        <div class="col-md-6">
-                            <ul>
-                                <li>Name: David Parker</li>
-                                <li>Age: 28</li>
-                                <li>Occupation: Web Developer</li>
-
-                            </ul>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mt-4">
+                        <div class="card servicesText">
+                            <div class="card-body">
+                                <i class="servicesIcon fa-solid fa-sitemap"></i>
+                                <h4 class="card-title mt-3">Problem solving</h4>
+                                <p class="card-text mt-3">Transforming loosely defined goals or questions into concrete,
+                                    actionable tasks is one of the most valuable skills I've honed as a researcher and
+                                    programmer.
+                                </p>
+                            </div>
                         </div>
-                    </div> -->
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mt-4">
+                        <div class="card servicesText">
+                            <div class="card-body">
+                                <i class="servicesIcon fa-solid fa-laptop-code"></i>
+                                <h4 class="card-title mt-3">Coding</h4>
+                                <p class="card-text mt-3">Python and R are my playground. Addressing scientific
+                                    questions,
+                                    automating repetitive tasks, and building web apps are just a few of the ways I find
+                                    joy
+                                    in programming.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mt-4">
+                        <div class="card servicesText">
+                            <div class="card-body">
+                                <i class="servicesIcon fa-solid fa-person-chalkboard"></i>
+                                <h4 class="card-title mt-3">Presenting</h4>
+                                <p class="card-text mt-3">I deliver information-rich presentations with a strong
+                                    intuition
+                                    for audience-specific communication. I convey ideas clearly with effective speech
+                                    and
+                                    visual content.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mt-4">
+                        <div class="card servicesText">
+                            <div class="card-body">
+                                <i class="servicesIcon fa-solid fa-file-lines"></i>
+                                <h4 class="card-title mt-3">Writing</h4>
+                                <p class="card-text mt-3">Whether it's writing grants, <a
+                                        href="https://scholar.google.com/citations?user=ZZ-1asgAAAAJ&hl=en&oi=sra">peer-reviewed
+                                        publications</a>, or sensitive emails, I lead with key points and optimize
+                                    structure
+                                    for clarity.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mt-4">
+                        <div class="card servicesText">
+                            <div class="card-body">
+                                <i class="servicesIcon fa-solid fa-chalkboard-user"></i>
+                                <h4 class="card-title mt-3">Teaching</h4>
+                                <p class="card-text mt-3">I have led technical workshops, designed curriculums for
+                                    courses
+                                    and outreach programs, and mentored grade school through college students.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
             </div>
-    </section>
-    <!-- services section-->
-    <section id="services">
-        <div class="container">
-            <h1 class="text-center">Skills</h1>
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class="servicesIcon fa-solid fa-chart-line"></i>
-                            <h4 class="card-title mt-3">Data science</h4>
-                            <p class="card-text mt-3">
-                                Every dataset has a story to tell. I have firsthand experience with every stage of the data life cycle - from collection, to cleaning, to analysis, to visualization, and synthesis.
-                            </p>
+        </section>
+
+        <section id="publications">
+            <div class="container mt-3">
+                <h1 class="my-section-header text-center">Featured Publications</h1>
+
+
+                <div class="card mt-4">
+                    <div class="row g-0">
+                        <div class="col-lg-3 d-block d-lg-flex justify-content-center bg-white text-center">
+                            <a class="stretched-link"
+                                href="https://www.cell.com/cell-reports/fulltext/S2211-1247(22)00961-5"><img
+                                    src="images/graphical-abstract.jpg" class="img-fluid rounded-start" alt="..."></a>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class='servicesIcon fa-solid fa-sitemap'></i>
-                            <h4 class="card-title mt-3">Problem solving</h4>
-                            <p class="card-text mt-3">Transforming loosely defined goals or questions into concrete, actionable tasks is one of the most valuable skills I've honed as a researcher and programmer.
-                            </p>
+                        <div class="col-12 col-lg-9 my-auto">
+                            <div class="card-body">
+                                <h5 class="fs-4">Emergence of sex-specific transcriptomes in a sexually dimorphic brain
+                                    nucleus</h5>
+                                <p class="card-text">My dissertation work demonstrating that male and female zebra
+                                    finches express unique sets of
+                                    genes during the development of a key song region in the brain.</p>
+                                <p class="card-text"><small class="text-muted">SR Friedrich, AA Nevue, ALP Andrade, TAF
+                                        Velho, CV Mello. 2022. Aug 2;40(5):111152.</small></p>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class='servicesIcon fa-solid fa-laptop-code'></i>
-                            <h4 class="card-title mt-3">Coding</h4>
-                            <p class="card-text mt-3">Python and R are my playground. Addressing scientific questions, automating repetitive tasks, and building web apps are just a few of the ways I find joy in programming.
-                            </p>
+
+                <div class="card mt-4">
+                    <div class="row g-0">
+                        <div class="col-lg-3 d-block text-center d-lg-flex justify-content-center bg-white">
+                            <a class="stretched-link"
+                                href="https://www.taylorfrancis.com/chapters/edit/10.1201/9780429019517-22/behavioral-biology-zebra-finch-samantha-friedrich-claudio-mello"><img
+                                    src="images/behavioral-biology-lab-animals.jpeg" class="img-fluid rounded-start"
+                                    style="height: 200px;" alt="..."></a>
+                        </div>
+                        <div class="col-12 col-lg-9 my-auto">
+                            <div class="card-body">
+                                <h5 class="fs-4">Chapter 20: Behavioral Biology of the Zebra Finch</h5>
+                                <p class="card-text">An animal care-oriented text on zebra finch behavior in
+                                    the wild
+                                    versus
+                                    captivity, and how best to support their natural behaviors in research settings.
+                                </p>
+                                <p class="card-text"><small class="text-muted">Friedrich SR &amp; CV Mello. Behavioral
+                                        Biology of Laboratory Animals. CRC Press. 2021. ISBN 9780367029234.</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card mt-4">
+                    <div class="row g-0">
+                        <div class="col-lg-3 d-block text-center d-lg-flex justify-content-center bg-white">
+                            <a class="stretched-link"
+                                href="https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-019-5871-2"><img
+                                    src="images/ion-channel-brain-gene-expression-200.jpg"
+                                    class="img-fluid rounded-start" alt="..."></a>
+                        </div>
+                        <div class="col-12 col-lg-9 my-auto">
+                            <div class="card-body">
+                                <h5 class="fs-4">Exploring the molecular basis of neuronal excitability in a vocal
+                                    learner</h5>
+                                <p class="card-text">A detailed analysis of genomics and brain gene expression patterns
+                                    for sodium, calcium, and chloride ion channels in the zebra finch.</p>
+                                <p class="card-text"><small class="text-muted">Friedrich SR, Lovell PV, Kaser TM, Mello
+                                        CV. BMC Genomics. 2019 Aug 2; 20(1): 629.</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mt-4">
+                    <div class="row g-0">
+                        <div class="col-lg-3 d-block text-center d-lg-flex justify-content-center">
+                            <a class="stretched-link"
+                                href="https://scholar.google.com/citations?hl=en&user=ZZ-1asgAAAAJ&view_op=list_works"><img
+                                    src="images/google-scholar.png" class="img-fluid rounded-start"
+                                    style="height: 100px;" alt="..."></a>
+                        </div>
+                        <div class="col-12 col-lg-9 d-flex align-items-center">
+                            <div class="card-body">
+                                <h5 class="fs-3">Find more of my publications on
+                                    <a href="" class="fs-3">Google Scholar</a>
+                                </h5>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class='servicesIcon fa-solid fa-person-chalkboard'></i>
-                            <h4 class="card-title mt-3">Presenting</h4>
-                            <p class="card-text mt-3">I deliver information-rich presentations with a strong intuition for audience-specific communication. I convey ideas clearly with effective speech and visual content.
-                            </p>
+        <!-- portfolio section-->
+        <section id="portfolio">
+            <div class="container mt-4">
+                <div class="my-section-header">
+                    <h1 class="text-center my-auto">Portfolio</h1>
+                </div>
+                <div class="row mx-auto">
+                    <div class="col-md-6 col-lg-4 mt-4">
+                        <div class="card portfolioContent">
+                            <img class="card-img-top" src="images/web_scraping_thumbnail.jpg" alt="Card image"
+                                style="width:100%">
+                            <div class="card-body">
+                                <h4 class="card-title">From HTML Soup to Tidy Data</h4>
+                                <p class="card-text">A Jupyter Notebook-based workshop I created and instructed on web
+                                    scraping in Python. Introduces basic HTML concepts, browser dev tools, and the
+                                    BeautifulSoup package to extract and format data from a real website.</p>
+                                <div class="text-center">
+                                    <a href="https://github.com/samifriedrich/webscraping_workshop"
+                                        class="btn btn-success">GitHub</a>
+                                    <a href="https://colab.research.google.com/drive/1_-PeO1jXaKAfUAcAj2UeIDEW7pcj8Ref?usp=sharing"
+                                        class="btn btn-success">Colab Notebook</a>
+                                    <a href="https://docs.google.com/presentation/d/1ebdksaWybsPGxfdEWMW1Yz00m4g5wyR2Vk1Lue8IHGU/edit?usp=sharing"
+                                        class="btn btn-success">Slide deck</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class='servicesIcon fa-solid fa-file-lines'></i>
-                            <h4 class="card-title mt-3">Writing</h4>
-                            <p class="card-text mt-3">Whether it's writing grants, <a href="https://scholar.google.com/citations?user=ZZ-1asgAAAAJ&hl=en&oi=sra">peer-reviewed publications</a>, or sensitive emails, I lead with key points and optimize structure for clarity. 
-                            </p>
+                    <div class="col-md-6 col-lg-4 mt-4">
+                        <div class="card portfolioContent">
+                            <img class="card-img-top" src="images/ensembl_thumbnail_edit.jpg" alt="Card image"
+                                style="width:100%">
+                            <div class="card-body">
+                                <h4 class="card-title">Navigating Genomes Using Ensembl</h4>
+                                <p class="card-text">
+                                    A quick introduction to some key functionalities of the Ensembl Genome Browser.
+                                    Learn how to customize the
+                                    browser with multiple data sources, compare and assess gene models, and query
+                                    BioMart to create highly customized
+                                    datasets.
+                                </p>
+                                <div class="text-center">
+                                    <a href="https://www.youtube.com/watch?v=gv5uHsJxm_Y&list=PLTbjtq_r2tlHNaedUFzrgQ5NFVlhIqRXs&index=1"
+                                        class="btn btn-success">Watch video</a>
+                                    <a href="https://drive.google.com/file/d/1doFet69RxbAZa_n8OQz73axNyLWH_yZ-/view?usp=sharing"
+                                        class="btn btn-success">Slide deck</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card servicesText">
-                        <div class="card-body">
-                            <i class='servicesIcon fa-solid fa-chalkboard-user'></i>
-                            <h4 class="card-title mt-3">Teaching</h4>
-                            <p class="card-text mt-3">I have led technical workshops, designed curriculums for courses and outreach programs, and mentored grade school & college students.
-                            </p>
+                    <div class="col-md-6 col-lg-4 mt-4">
+                        <div class="card portfolioContent">
+                            <img class="card-img-top" src="images/dataviz-thumbnail.jpg" alt="Card image"
+                                style="width:100%">
+                            <div class="card-body">
+                                <h4 class="card-title">Data Visualization in Python</h4>
+                                <p class="card-text">A Jupyter Notebook-based workshop that demonstrates some of the
+                                    neat
+                                    ways to explore and display data using matplotlib, seaborn and bokeh. It also
+                                    introduces
+                                    building k-nearest neighbors models with scikit-learn. </p>
+                                <div class="text-center">
+                                    <a href="https://github.com/samifriedrich/dataviz-sklearn-workshop"
+                                        class="btn btn-success">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mt-4">
+                        <div class="card portfolioContent">
+                            <img class="card-img-top" src="images/showquester_thumbnail.jpg" alt="Card image"
+                                style="width:100%">
+                            <div class="card-body">
+                                <h4 class="card-title">ShowQuester</h4>
+                                <p class="card-text">My #1 passion project. Type in a music venue, and get a curated
+                                    playlist of songs from artists with upcoming performances. Built using React and
+                                    Python
+                                    (Flask).</p>
+                                <div class="text-center">
+                                    <a href="https://www.showquester.com/" class="btn btn-success">ShowQuester.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mt-4">
+                        <div class="card">
+                            <img class="card-img-top" src="images/radev_shiny_thumbnail.jpg" alt="Card image"
+                                style="width:100%">
+                            <div class="card-body">
+                                <h4 class="card-title">Gene Explorer</h4>
+                                <p class="card-text">
+                                    An R Shiny app that takes gene symbols as user input and generates group-wise gene
+                                    expression plots from RNA-seq data.
+                                    Flexibly displays data for multiple genes added by the user and generates
+                                    downloadable PNGs that are publication-ready.
+                                </p>
+                                <div class="text-center">
+                                    <a href="https://github.com/samifriedrich/RNAseq-gene-expression"
+                                        class="btn btn-success">GitHub</a>
+                                    <a href="https://sami-friedrich.shinyapps.io/devRA-GeneExplorer/"
+                                        class="btn btn-success">Live Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mt-4">
+                        <div class="card portfolioContent">
+                            <img class="card-img-top" src="images/seq-recovery-thumbnail.jpg" alt="Card image"
+                                style="width:100%">
+                            <div class="card-body">
+                                <h4 class="card-title">Sequence Recovery</h4>
+                                <p class="card-text">A Python project that extends zebra finch gene models using a
+                                    comparative genomics approach.</p>
+                                <div class="text-center">
+                                    <a href="https://github.com/samifriedrich/seq-recovery"
+                                        class="btn btn-success">GitHub</a>
+                                    <a href="https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-019-5871-2"
+                                        class="btn btn-success">Publication</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mx-auto">
+                        <div class="col-lg-6 mt-4">
+                            <div class="card portfolioContent">
+                                <div
+                                    class="embed-responsive embed-responsive-16by9 ratio ratio-16x9 col-xs-12 text-center">
+                                    <iframe
+                                        src="https://drive.google.com/file/d/1S8Xxqs5LqlYAxNcEadYvrf6iWL0uI1-F/preview"
+                                        width="640" height="480" allow="autoplay"></iframe>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Seven Ways to Stay Curious</h4>
+                                    <p class="card-text">Taking the stage as the Student Speaker at my college
+                                        graduation, I
+                                        offer seven actionable strategies to nuture curiosity and wonder throughout
+                                        life.
+                                        Delivered at the University of Texas College of Natural Sciences Commencement in
+                                        Dec
+                                        2012, these are core principles I continue to live by.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mt-4">
+                            <div class="card portfolioContent">
+                                <div
+                                    class="embed-responsive embed-responsive-16by9 col-xs-12 text-center ratio ratio-16x9">
+                                    <iframe
+                                        src="https://drive.google.com/file/d/1w5qszBtYyD43V9Y_6IpELmgWWPOuQEpO/preview"
+                                        allow="autoplay"></iframe>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">A Day in the Life of a Graduate Researcher</h4>
+                                    <p class="card-text">In this video, I share my path to becoming an avian
+                                        neuroscientist,
+                                        my
+                                        day to day as a graduate researcher, and some of the pros and cons of the job.
+                                        Created
+                                        for a middle school virtual Career Day in 2021.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
+        <!-- contact section-->
+        <section id="contact">
+            <div class="container mt-3 contactContent">
+                <div class="my-section-header">
+                    <h1 class="text-center my-auto">Contact Me</h1>
+                </div>
+                <div class="text-center contactMessage m-4">
+                    <p class="text-white">Interested in working with me? I'd love to hear from you!</p>
+                </div>
+                <div class="row mt-4 justify-content-md-center">
+                    <div class="col-lg-6">
+                        <!-- form fields -->
+                        <form action="https://formspree.io/f/xrgjdkoq" method="POST">
+                            <input type="text" name="name" class="form-control form-control-lg" placeholder="Your name">
+                            <input type="email" name="email" class="form-control mt-3" placeholder="Your email">
+                            <input type="text" name="subject" class="form-control mt-3" placeholder="Subject">
+                            <div class="mb-3 mt-3">
+                                <textarea class="form-control" rows="5" id="comment" name="message"
+                                    placeholder="Message"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-custom mt-3">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" class="">
+
+        <!-- social media icons -->
+        <div class="social-icons mt-4">
+            <a href="https://github.com/samifriedrich/" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/SamiFriedrich" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/sami-friedrich" target="_blank"><i class="fab fa-linkedin"></i></a>
         </div>
-    </section>
-    <!-- portfolio section-->
-    <section id="portfolio">
-        <div class="container mt-3">
-            <h1 class="text-center">Portfolio</h1>
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/web_scraping_thumbnail.jpg" alt="Card image"
-                            style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">From HTML Soup to Tidy Data</h4>
-                            <p class="card-text">A Jupyter Notebook-based workshop I created and instructed on web
-                                scraping in Python. Introduces basic HTML concepts, browser dev tools, and the
-                                BeautifulSoup package to extract and format data from a real website.</p>
-                            <div class="text-center">
-                                <a href="https://github.com/samifriedrich/webscraping_workshop"
-                                    class="btn btn-success">GitHub</a>
-                                <a href="https://colab.research.google.com/drive/1_-PeO1jXaKAfUAcAj2UeIDEW7pcj8Ref?usp=sharing"
-                                    class="btn btn-success">Colab Notebook</a>
-                                <a href="https://docs.google.com/presentation/d/1ebdksaWybsPGxfdEWMW1Yz00m4g5wyR2Vk1Lue8IHGU/edit?usp=sharing"
-                                    class="btn btn-success">Slide deck</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/ensembl_thumbnail_edit.jpg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Navigating Genomes Using Ensembl</h4>
-                            <p class="card-text">A quick introduction to some key functionalities of the Ensembl Genome
-                                Browser. Learn how to customize the browser with disparate data sources, compare and
-                                assess gene models, and query BioMart to create highly customized datasets. </p>
-                            <div class="text-center">
-                                <a href="https://www.youtube.com/watch?v=gv5uHsJxm_Y&list=PLTbjtq_r2tlHNaedUFzrgQ5NFVlhIqRXs&index=1"
-                                    class="btn btn-success">Watch video</a>
-                                <a href="https://drive.google.com/file/d/1doFet69RxbAZa_n8OQz73axNyLWH_yZ-/view?usp=sharing"
-                                    class="btn btn-success">Slide deck</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/dataviz-thumbnail.jpg" alt="Card image"
-                            style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Data Visualization in Python</h4>
-                            <p class="card-text">A Jupyter Notebook-based workshop that demonstrates some of the neat
-                                ways to explore and display data using matplotlib, seaborn and bokeh. It also introduces
-                                scikit-learn and k-nearest neighbors models. </p>
-                            <div class="text-center">
-                                <a href="https://github.com/samifriedrich/dataviz-sklearn-workshop"
-                                    class="btn btn-success">GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/showquester_thumbnail.jpg" alt="Card image"
-                            style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">ShowQuester</h4>
-                            <p class="card-text">My #1 passion project. Type in a music venue, and get a curated
-                                playlist of songs from artists with upcoming performances. Built using React and Python
-                                (Flask).</p>
-                            <div class="text-center">
-                                <a href="https://www.showquester.com/" class="btn btn-success">ShowQuester.com</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card">
-                        <img class="card-img-top" src="images/radev_shiny_thumbnail.jpg" alt="Card image"
-                            style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Gene Explorer</h4>
-                            <p class="card-text">An R Shiny app to interactively plot RNA-seq gene expression data and
-                                create publication-quality images.</p>
-                            <div class="text-center">
-                                <a href="https://github.com/samifriedrich/RNAseq-gene-expression"
-                                    class="btn btn-success">GitHub</a>
-                                <a href="https://sami-friedrich.shinyapps.io/devRA-GeneExplorer/"
-                                    class="btn btn-success">Live Demo</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/seq-recovery-thumbnail.jpg" alt="Card image"
-                            style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Sequence Recovery</h4>
-                            <p class="card-text">A Python project that extends zebra finch gene models using a comparative genomics approach.</p>
-                            <div class="text-center">
-                                <a href="https://github.com/samifriedrich/seq-recovery"
-                                    class="btn btn-success">GitHub</a>
-                                <a href="https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-019-5871-2"
-                                    class="btn btn-success">Publication</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <!-- <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/actionshot_lab.jpeg" alt="Card image">
-                        <div class="card-body">
-                            <h4 class="card-title">A Day in the Life of a Graduate Researcher</h4>
-                            <p class="card-text">In this video, I share my path to becoming an avian neuroscientist, my
-                                day to day as a graduate researcher, and some of the pros and cons of the job. Created
-                                for a middle school virtual Career Day in 2021.</p>
-                            <div class="text-center">
-                                <a href="https://drive.google.com/file/d/1w5qszBtYyD43V9Y_6IpELmgWWPOuQEpO/preview"
-                                    class="btn btn-success">Watch video</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br> -->
-            <div class="row">
-                <div class="col-lg-6 mt-4">
-                    <div class="card portfolioContent">
-                        <div class="embed-responsive embed-responsive-16by9 ratio ratio-16x9 col-xs-12 text-center">
-                            <iframe src="https://drive.google.com/file/d/1S8Xxqs5LqlYAxNcEadYvrf6iWL0uI1-F/preview" width="640" height="480" allow="autoplay"></iframe>
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title">Seven Ways to Stay Curious</h4>
-                            <p class="card-text">Taking the stage as the Student Speaker at my college graduation, I offer seven actionable strategies to nuture curiosity and wonder throughout life. Delivered at the University of Texas College of Natural Sciences Commencement in Dec 2012, these are core principles I continue to live by.</p>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 mt-4">
-                    <div class="card portfolioContent">
-                        <div class="embed-responsive embed-responsive-16by9 col-xs-12 text-center ratio ratio-16x9">
-                            <iframe src="https://drive.google.com/file/d/1w5qszBtYyD43V9Y_6IpELmgWWPOuQEpO/preview"
-                                 allow="autoplay"></iframe>
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title">A Day in the Life of a Graduate Researcher</h4>
-                            <p class="card-text">In this video, I share my path to becoming an avian neuroscientist, my
-                                day to day as a graduate researcher, and some of the pros and cons of the job. Created
-                                for a middle school virtual Career Day in 2021.</p>
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- <iframe src="https://drive.google.com/file/d/1w5qszBtYyD43V9Y_6IpELmgWWPOuQEpO/preview" width="640" height="480" allow="autoplay"></iframe> -->
-    </section>
-    <!-- contact section-->
-    <section id="contact">
-        <div class="container mt-3 contactContent">
-            <h1 class="text-center">Contact Me</h1>
-            <div class="text-center contactMessage"><p class="poppinsriser pop-300">Interested in working with me? I'd love to hear from you!</p></div>
-            <div class="row mt-4 justify-content-md-center">
-                <div class="col-lg-6">
-                    <!-- form fields -->
-                    <form
-                    action="https://formspree.io/f/xrgjdkoq"
-                    method="POST">
-                        <input type="text" name="name" class="form-control form-control-lg" placeholder="Your name">
-                        <input type="email" name="email" class="form-control mt-3" placeholder="Your email">
-                        <input type="text" name="subject" class="form-control mt-3" placeholder="Subject">
-                        <div class="mb-3 mt-3">
-                            <textarea class="form-control" rows="5" id="comment" name="message"
-                                placeholder="Message"></textarea>
-                        </div>
-                    
-                    <button type="submit" class="btn btn-success mt-3">Send Message</button>
-                </form>
-                </div>
-
-            </div>
+        <div class="copyright">
+            <p>&copy; Copyright 2022, 2023 Sami Friedrich</p>
+            <p>Built with HTML, CSS, and Bootstrap 5 by Sami Friedrich</p>
         </div>
-    </section>
-    <!-- footer section-->
-    <footer id="footer">
-        <div class="container-fluid">
-            <!-- social media icons -->
-            <div class="social-icons mt-4">
-                <a href="https://github.com/samifriedrich/" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://twitter.com/SamiFriedrich" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.linkedin.com/in/sami-friedrich" target="_blank"><i class="fab fa-linkedin"></i></a>
-            </div>
-            <div class="copyright">
-                <p>&copy; Copyright 2022 Sami Friedrich</p>
-                    <p>Built with HTML, CSS, and Bootstrap 5 by Sami Friedrich</p>
-            </div>
-        </div>
+
     </footer>
-    <!-- load javascript after loading all html content -->
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/c70f6425bb.js" crossorigin="anonymous"></script>
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
     <script src="script/script.js"></script>
+
+
 </body>
 
 </html>
