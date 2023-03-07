@@ -80,6 +80,64 @@ a {
     text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.15);
 }
 
+
+
+
+/* Navbar */
+
+/* remove border from burger button */
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* add animation to burger menu icon */
+.navbar-toggler span {
+    display: block;
+    background-color: #ffffff;
+    height: 3px;
+    width: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    left: 0;
+    opacity: 1;
+    transition: all 0.2s ease-out;
+    transform-origin: center left;
+}
+
+.navbar-toggler span:nth-child(1) {
+    margin-top: 0.3em;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(1) {
+    transform: translate(15%, -33%) rotate(45deg);
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(3) {
+    transform: translate(15%, 33%) rotate(-45deg);
+}
+
+.navbar-toggler span:nth-child(1) {
+    transform: translate(0%, 0%) rotate(0deg);
+}
+
+.navbar-toggler span:nth-child(2) {
+    opacity: 1;
+}
+
+.navbar-toggler span:nth-child(3) {
+    transform: translate(0%, 0%) rotate(0deg);
+}
+
+/* navbar appearance customization */
+
 .navbar-toggler {
     margin-bottom: 7px;
     margin-top: 7px;
@@ -99,7 +157,8 @@ a {
     color: white;
     font-family: 'Poppins', sans-serif;
     font-size: 1.2rem;
-    float: right !important;
+    /* float: right !important; */
+    text-align: center;
 }
 
 .navbar-nav>li>a:hover,
@@ -107,7 +166,10 @@ a {
     color: rgb(107, 162, 177, 1);
 }
 
-/* hero background image */
+
+
+
+/* Hero / Home */
 .bgimage {
     height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/neuralnet-rainbow.jpeg');
@@ -129,6 +191,9 @@ a {
     transform: translate(-50%, -50%);
     color: white;
 }
+
+
+/* Skills section */
 
 .servicesIcon {
     font-size: 3rem;
@@ -152,6 +217,10 @@ a {
     background-image: linear-gradient(to top left, #caf2f2 0%, #dfe5fa 100%);
 }
 
+
+
+/* Social icons styling */
+
 .social-icons {
     font-size: 1rem;
 }
@@ -172,6 +241,8 @@ a {
     color: #ffffff;
     font-size: 36px;
 }
+
+
 
 /* footer styling */
 #footer {
@@ -204,6 +275,25 @@ a {
 
 
 /* Media queries  */
+
+/* make navbar full screen on mobile */
+@media (max-width: 992px) {
+    #navbar-content {
+        height: 100vh;
+        padding-top: 6rem;
+        background-color: black;
+    }
+
+    .navbar-nav li a {
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        font-size: 2rem;
+        /* float: right !important; */
+        text-align: center;
+    }
+
+}
+
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     body {
